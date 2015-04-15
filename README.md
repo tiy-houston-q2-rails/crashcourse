@@ -28,5 +28,18 @@ I'll be doing in the class.
 
 ## Commands I use
 
+* `rails generate controller pages home` - creates a page, defaulting to
+  http://localhost:3000/pages/home
 * `rake db:migrate` will change the database (add tables)
 * `rails s` will start rails and do everything. We can preview on port 3000
+
+## Cool sites for this
+
+* [Unsplash](https://unsplash.com/) Photos
+
+## Gems we use
+
+* bourbon, neat, bitters: UI framework, like bootstrap, by Thoughtbot
+* rails-admin : administration system
+* RDiscount : render markdown
+* payola-payments : easy as pie payment processing with stripe
