@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
+  # get 'posts/list'
+  root 'posts#list'
+
+  get "posts/:id" => 'posts#detail', as: :post
+  # get "posts/bacon-is-awesome" => 'posts#show'
+  # get "posts/2015/04/01/bacon-is-awesome" => 'posts#show'
+
+  get 'about' => 'static_pages#about'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

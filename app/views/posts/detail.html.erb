@@ -1,0 +1,6 @@
+<%= image_tag @post.photo_url %>
+
+<h1><%= @post.title %></h1>
+<p>Published on: <%= @post.published_date %>. By: <%= @post.author %></p>
+
+<%= simple_format @post.content %>

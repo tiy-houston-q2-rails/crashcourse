@@ -1,0 +1,22 @@
+
+
+<div class="cards">
+
+  <% @posts.each do |post| %>
+
+    <%= link_to post do %>
+      <div class="card">
+        <div class="card-image">
+          <%= image_tag post.photo_url %>
+        </div>
+        <div class="card-header">
+          <%= post.title %>
+        </div>
+        <div class="card-copy">
+          <p><%= truncate post.content, length: 250 %></p>
+        </div>
+      </div>
+    <% end %>
+  <% end %>
+
+</div>

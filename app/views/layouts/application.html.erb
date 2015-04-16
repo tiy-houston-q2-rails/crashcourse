@@ -5,10 +5,53 @@
   <%= stylesheet_link_tag    'application', media: 'all' %>
   <%= javascript_include_tag 'application' %>
   <%= csrf_meta_tags %>
+  <link href='//fonts.googleapis.com/css?family=Lusitana:400,700' rel='stylesheet' type='text/css'>
+ <link href='//fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+ <link href='//fonts.googleapis.com/css?family=Merriweather+Sans:400,300,300italic,400italic,700italic,700,800,800italic' rel='stylesheet' type='text/css'>
+
 </head>
 <body>
 
-<%= yield %>
+  <header class="centered-navigation type-system-serif" role="banner">
+    <div class="centered-navigation-wrapper">
+      <a href="/" class="mobile-logo">
+        <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" alt="Logo image">
+      </a>
+      <a href="javascript:void(0)" id="js-centered-navigation-mobile-menu" class="centered-navigation-mobile-menu">MENU</a>
+      <nav role="navigation">
+        <ul id="js-centered-navigation-menu" class="centered-navigation-menu show">
+          <li class="nav-link">
+            <%= link_to 'Posts', root_path %>
+          </li>
+          <li class="nav-link">
+            <%= link_to 'About', "/about" %>
+          </li>
+          <li class="nav-link logo">
+            <a href="/" class="logo">
+              <img src="https://raw.githubusercontent.com/thoughtbot/refills/master/source/images/placeholder_logo_3_dark.png" alt="Logo image">
+            </a>
+          </li>
+          <li class="nav-link more"><a href="javascript:void(0)">Popular Posts</a>
+            <ul class="submenu">
+
+              <% @posts.each do |post| %>
+                <li>
+                  <%= link_to post.title, post %>
+                </li>
+              <% end %>
+
+            </ul>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+
+
+    <article class="type-system-serif">
+    <%= yield %>
+  </article>
 
 </body>
 </html>
