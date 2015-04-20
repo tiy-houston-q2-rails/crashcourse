@@ -36,6 +36,17 @@ I'll be doing in the class.
 ## Cool sites for this
 
 * [Unsplash](https://unsplash.com/) Photos
+* [Refills and bourbon](http://refills.bourbon.io) User Interface components
+* [BaconIpsum](http://baconipsum.com)
+* [HipsterIpsum](http://hipsum.co)
+* [MinionIpsum](http://www.minionsipsum.com/)
+
+## Books
+
+* [RubyWizardry](http://www.nostarch.com/rubywizardry)
+* [JavaScript for Kids](http://www.nostarch.com/jsforkids)
+* [RailsTutorial](https://www.railstutorial.org/)
+* [Learn to Program](http://www.amazon.com/Program-Second-Edition-Facets-Series/dp/1934356360)
 
 ## Gems we use
 
@@ -43,3 +54,4 @@ I'll be doing in the class.
 * rails-admin : administration system
 * RDiscount : render markdown
 * payola-payments : easy as pie payment processing with stripe
+
